@@ -13,3 +13,18 @@ struct WeatherInfo: Codable, Equatable {
     let icon: String
     let cityName: String
 }
+
+struct OpenWeatherResponse: Decodable {
+    let name: String
+    let weather: [WeatherItem]
+    let main: MainInfo
+}
+
+struct WeatherItem: Decodable {
+    let description: String
+    let icon: String
+}
+
+struct MainInfo: Decodable {
+    let temp: Double
+}
