@@ -10,8 +10,8 @@ enum WeatherServiceError: Error {
 }
 
 final class OpenWeatherService: WeatherService {
-    private let apiKey = "KEY"
-    private let city = "Kyiv"
+    private let apiKey = "bca06c36f531cade2cc0285a836e6a87"
+    private let city = "Bad Urach"
 
     func fetchCurrentWeather() async throws -> WeatherInfo {
         guard let url = URL(string:

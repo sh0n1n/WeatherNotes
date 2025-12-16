@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 final class NoteDetailViewModel: ObservableObject {
     let note: Note

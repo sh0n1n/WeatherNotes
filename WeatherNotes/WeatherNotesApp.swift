@@ -4,7 +4,12 @@ import SwiftUI
 struct WeatherNotesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NotesListView(
+                viewModel: NotesListViewModel(
+                    notesStorage: NotesStorage(),
+                    weatherService: OpenWeatherService()
+                )
+            )
         }
     }
 }
